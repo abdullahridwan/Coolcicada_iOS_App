@@ -15,6 +15,12 @@
 		B55F1B59265DE2A800B3CE70 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F1B2E265DE2A200B3CE70 /* ContentView.swift */; };
 		B55F1B5A265DE2A800B3CE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F1B2F265DE2A800B3CE70 /* Assets.xcassets */; };
 		B55F1B5B265DE2A800B3CE70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B55F1B2F265DE2A800B3CE70 /* Assets.xcassets */; };
+		B55F1B6D265DE3A000B3CE70 /* TappableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F1B6C265DE3A000B3CE70 /* TappableCircle.swift */; };
+		B55F1B6F265DE61700B3CE70 /* OneWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F1B6E265DE61700B3CE70 /* OneWorkout.swift */; };
+		B55F1B74265DF38400B3CE70 /* WorkoutList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F1B73265DF38400B3CE70 /* WorkoutList.swift */; };
+		B55F1B76265DF3C600B3CE70 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F1B75265DF3C600B3CE70 /* Workout.swift */; };
+		B55F1B78265DF41E00B3CE70 /* AllWorkouts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F1B77265DF41E00B3CE70 /* AllWorkouts.swift */; };
+		B55F1B7A265DF58700B3CE70 /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55F1B79265DF58700B3CE70 /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		B55F1B4F265DE2A800B3CE70 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B55F1B53265DE2A800B3CE70 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		B55F1B55265DE2A800B3CE70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B55F1B6C265DE3A000B3CE70 /* TappableCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableCircle.swift; sourceTree = "<group>"; };
+		B55F1B6E265DE61700B3CE70 /* OneWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWorkout.swift; sourceTree = "<group>"; };
+		B55F1B73265DF38400B3CE70 /* WorkoutList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutList.swift; sourceTree = "<group>"; };
+		B55F1B75265DF3C600B3CE70 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		B55F1B77265DF41E00B3CE70 /* AllWorkouts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllWorkouts.swift; sourceTree = "<group>"; };
+		B55F1B79265DF58700B3CE70 /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +110,9 @@
 		B55F1B2C265DE2A200B3CE70 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				B55F1B72265DF32600B3CE70 /* Resources */,
+				B55F1B6B265DE38C00B3CE70 /* Components */,
+				B55F1B6A265DE37E00B3CE70 /* Views */,
 				B55F1B2D265DE2A200B3CE70 /* CoolcicadaApp.swift */,
 				B55F1B2E265DE2A200B3CE70 /* ContentView.swift */,
 				B55F1B2F265DE2A800B3CE70 /* Assets.xcassets */,
@@ -149,6 +164,33 @@
 				B55F1B55265DE2A800B3CE70 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		B55F1B6A265DE37E00B3CE70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B55F1B6E265DE61700B3CE70 /* OneWorkout.swift */,
+				B55F1B73265DF38400B3CE70 /* WorkoutList.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B55F1B6B265DE38C00B3CE70 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B55F1B6C265DE3A000B3CE70 /* TappableCircle.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B55F1B72265DF32600B3CE70 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B55F1B75265DF3C600B3CE70 /* Workout.swift */,
+				B55F1B77265DF41E00B3CE70 /* AllWorkouts.swift */,
+				B55F1B79265DF58700B3CE70 /* HelperFunctions.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +350,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B55F1B74265DF38400B3CE70 /* WorkoutList.swift in Sources */,
+				B55F1B7A265DF58700B3CE70 /* HelperFunctions.swift in Sources */,
+				B55F1B6F265DE61700B3CE70 /* OneWorkout.swift in Sources */,
+				B55F1B6D265DE3A000B3CE70 /* TappableCircle.swift in Sources */,
 				B55F1B58265DE2A800B3CE70 /* ContentView.swift in Sources */,
 				B55F1B56265DE2A800B3CE70 /* CoolcicadaApp.swift in Sources */,
+				B55F1B76265DF3C600B3CE70 /* Workout.swift in Sources */,
+				B55F1B78265DF41E00B3CE70 /* AllWorkouts.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
