@@ -13,14 +13,22 @@ struct WorkoutList: View {
 
     
     var body: some View {
-        let today = instanceOfHelper.getTodayWeekDay()
-        let todaysWorkouts = allWorkouts[today]
+        let test = instanceOfHelper.getTodayWeekDay()
+        let testWorkouts = allWorkouts[test]
         
-        List{
-            ForEach(todaysWorkouts!){singleWO in
-                OneWorkout(workout: singleWO)
+        //let today = "Monday" //instanceOfHelper.getTodayWeekDay()
+        //let todaysWorkouts = allWorkouts[today]
+        
+        NavigationView{
+            List{
+                ForEach(testWorkouts!){singleWO in
+                    OneWorkout(workout: singleWO)
+                }
             }
+            .navigationTitle("\(test)'s Plan")
         }
+        
+        
     }
 }
 

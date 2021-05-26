@@ -14,22 +14,27 @@ struct OneWorkout: View {
 
         VStack(alignment: .leading){
             //name
-            Text(workout.name).font(.title)
+            Text(workout.name)
+                .font(.headline).bold()
+                .foregroundColor(.primary)
             
             //sets and reps
-            Text("Sets: \(workout.sets) and Reps: \(workout.reps)")
-                .font(.title2)
-            
+            Text("Overview | Sets: \(workout.sets) and Reps: \(workout.reps)")
+                .font(.subheadline)
+                .foregroundColor(.secondary)
             //hstack of circles
             HStack{
                 ForEach(range){set in
                     TappableCircle()
                         //.padding(.leading, 50)
                         .padding(.trailing, 8)
+                        .padding(.bottom, 8)
                 }
+                Spacer()
             }
             .offset(y: 2)
         }
+        .padding(5)
 
     }
 }

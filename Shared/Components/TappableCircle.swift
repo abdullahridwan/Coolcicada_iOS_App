@@ -18,7 +18,7 @@ struct TappableCircle: View {
     var body: some View {
         Circle()
             .fill(self.tapped ? Color.green : Color.red)
-            .frame(width: 50, height: 50)
+            .frame(width: 30, height: 30)
             .shadow(color: self.tapped ? Color.blue.opacity(0.4) : Color.red.opacity(0.4), radius: 4, x: 0, y: 2)
             .shadow(color: Color.gray.opacity(0.3), radius: 2, x: 0, y: 1)
             
